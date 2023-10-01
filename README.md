@@ -19,7 +19,7 @@ To get started with the Student Management System, follow these steps:
    git clone https://github.com/cgardesey/StudentSearch.git
 2. Navigate to the project directory:
    ```bash
-   cd aspnet-ldap-sso
+   cd StudentSearch
 
 3. Restore dependencies and run the application:
    ```bash
