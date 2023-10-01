@@ -1,22 +1,25 @@
-# ASP.NET Single Sign-On with LDAP
 
-This repository contains an ASP.NET application that implements Single Sign-On (SSO) using LDAP (Lightweight Directory Access Protocol) for authentication. With this setup, users can log in to the application using their LDAP credentials, providing a seamless authentication experience.
+Certainly! Below is an example of a Git README in Markdown format for an ASP.NET application designed for searching students in a student management system:
+
+markdown
+Copy code
+# Student Management System - Search Feature
+
+Welcome to the Student Management System application! This ASP.NET application allows you to efficiently manage student records and perform quick searches based on various criteria.
 
 ## Features
 
-- **LDAP Integration**: Authenticate users using LDAP credentials.
-- **Single Sign-On (SSO)**: Achieve seamless authentication across multiple applications.
-
-## Prerequisites
-
-Before you begin, ensure you have the following installed/configured:
-
-- [.NET Core SDK](https://dotnet.microsoft.com/download)
-- LDAP server details (server address, port, base DN, etc.)
+- **Search Students:** Easily search for students using different parameters such as name, roll number, class, or any other custom attribute.
+- **View Student Details:** Access detailed information about each student, including personal details, contact information, and academic records.
+- **Edit Student Information:** Update student details such as contact numbers, addresses, or course-related information.
+- **Add New Students:** Add new students to the system with complete details and assign them to appropriate classes.
+- **Delete Students:** Remove students from the system when they graduate or leave the institution.
 
 ## Getting Started
 
-1. **Clone the repository:**
+To get started with the Student Management System, follow these steps:
+
+1. **Clone the Repository:**
    ```bash
    git clone https://github.com/username/aspnet-ldap-sso.git
 
@@ -31,20 +34,12 @@ Before you begin, ensure you have the following installed/configured:
 
 The application will be accessible at http://localhost:5000.
 
-## LDAP Configuration
+## Technologies Used
 
-To configure LDAP for Single Sign-On, modify the appsettings.json file with your LDAP server details:
-  {
-  "LDAPSettings": {
-    "Server": "ldap://ldap.example.com",
-    "Port": 389,
-    "BaseDN": "ou=users,dc=example,dc=com",
-    "Username": "cn=admin,dc=example,dc=com",
-    "Password": "yourpassword"
-   }
- }
-
-Ensure to replace the placeholders with your LDAP server information.
+- **ASP.NET Core:** The robust, cross-platform, high-performance framework for building modern, cloud-based, Internet-connected applications.
+- **Entity Framework Core:** An open-source, lightweight, and extensible version of the popular Entity Framework data access technology.
+- **HTML, CSS, JavaScript:** Frontend technologies for creating responsive and interactive user interfaces.
+- **SQL Server:** A relational database management system to store and manage student data securely.
 
 ## Usage
 1. Access the application at http://localhost:5000.
