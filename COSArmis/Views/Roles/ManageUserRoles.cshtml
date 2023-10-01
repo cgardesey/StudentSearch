@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Manage User Roles";
+}
+
+
+<h2>Role Add to User</h2>
+
+<form action="@Url.Action("RoleAddToUser", "Roles")" method="post" class="form-inline" id="RolesForm">
+
+
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    @Html.DropDownList("UserName", (IEnumerable<SelectListItem>)ViewBag.Users, "Select User", htmlAttributes: new { @class = "form-control" })
+    @Html.DropDownList("RoleName", (IEnumerable<SelectListItem>)ViewBag.Roles, "Select Role", htmlAttributes: new { @class = "form-control" })
+    @Html.ValidationMessage("UserName", "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-default btn-primary" />
+        </div>
+    </div>
+</form>
+
+    <hr />
+ 
+    <hr />
+    <h3>Delete A User from a Role</h3>
+<h3>Get Roles for a User</h3>
+
+@using (Html.BeginForm("GetRoles", "Roles"))
+{
+    @Html.AntiForgeryToken()
+    <p>
+        Username : @Html.TextBox("UserName")
+        <input type="submit" value="Get Roles for this User" />
+    </p>
+}
+
+@if (ViewBag.RolesForThisUser != null)
+{
+    <div style="background-color:yellow;">
+        <h3>Roles for this user </h3>
+        <ol>
+            @foreach (string s in ViewBag.RolesForThisUser)
+            {
+                <li>@s</li>
+            }
+        </ol>
+    </div>
+}
+ 
+    <form action="@Url.Action("DeleteRoleForUser", "Roles")" method="post" class="form-inline">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    @Html.DropDownList("UserName", (IEnumerable<SelectListItem>)ViewBag.Users, "Select User", htmlAttributes: new { @class = "form-control" })
+    @Html.DropDownList("RoleName", (IEnumerable<SelectListItem>)ViewBag.Roles, "Select Role", htmlAttributes: new { @class = "form-control" })
+    @Html.ValidationMessage("UserName", "", new { @class = "text-danger" })
+
+   <div class="form-group">
+   <div class="col-md-offset-2 col-md-10">
+   <input type="submit" value="Delete" class="btn btn-default btn-danger" />
+   </div>
+   </div>
+    </form>

@@ -1,0 +1,236 @@
+C:\Users\AppDev\documents\visual studio 2013\Projects\COSArmis\COSArmis\obj\Debug\COSArmis.csprojResolveAssemblyReference.cache
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\COSArmis.dll.config
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\COSArmis.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\COSArmis.pdb
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Antlr3.Runtime.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\EntityFramework.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\EntityFramework.SqlServer.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Newtonsoft.Json.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Owin.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\PagedList.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\PagedList.Mvc.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.Helpers.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.Mvc.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.Optimization.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.Razor.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.WebPages.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.WebPages.Razor.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\WebGrease.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\PagedList.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\PagedList.Mvc.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.Helpers.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.Mvc.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.Optimization.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.Razor.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.WebPages.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\System.Web.WebPages.Razor.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Antlr3.Runtime.pdb
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Newtonsoft.Json.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\EntityFramework.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\EntityFramework.SqlServer.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\obj\Debug\COSArmis.dll
+C:\Users\AppDev\Documents\Visual Studio 2013\Projects\COSArmis\COSArmis\obj\Debug\COSArmis.pdb
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\obj\Debug\COSArmis.csprojResolveAssemblyReference.cache
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\obj\Debug\COSArmis.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\obj\Debug\COSArmis.pdb
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\COSArmis.dll.config
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\COSArmis.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\COSArmis.pdb
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Antlr3.Runtime.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\EntityFramework.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\EntityFramework.SqlServer.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Newtonsoft.Json.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Owin.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\PagedList.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\PagedList.Mvc.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.Helpers.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.Mvc.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.Optimization.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.Razor.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.WebPages.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.WebPages.Razor.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\WebGrease.dll
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\PagedList.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\PagedList.Mvc.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.Helpers.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.Mvc.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.Optimization.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.Razor.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.WebPages.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\System.Web.WebPages.Razor.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Antlr3.Runtime.pdb
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Newtonsoft.Json.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\EntityFramework.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\EntityFramework.SqlServer.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Cyril\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\COSArmis.dll.config
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\COSArmis.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\COSArmis.pdb
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Antlr3.Runtime.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\EntityFramework.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\EntityFramework.SqlServer.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Newtonsoft.Json.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Owin.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\PagedList.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\PagedList.Mvc.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.Helpers.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.Mvc.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.Optimization.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.Razor.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.WebPages.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.WebPages.Razor.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\WebGrease.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\PagedList.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\PagedList.Mvc.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.Helpers.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.Mvc.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.Optimization.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.Razor.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.WebPages.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\System.Web.WebPages.Razor.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Antlr3.Runtime.pdb
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Newtonsoft.Json.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\EntityFramework.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\EntityFramework.SqlServer.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\obj\Debug\COSArmis.dll
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\obj\Debug\COSArmis.pdb
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\COSArmis.dll.config
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\COSArmis.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\COSArmis.pdb
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Antlr3.Runtime.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\EntityFramework.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\EntityFramework.SqlServer.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Newtonsoft.Json.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Owin.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\PagedList.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\PagedList.Mvc.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.Helpers.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.Mvc.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.Optimization.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.Razor.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.WebPages.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.WebPages.Razor.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\WebGrease.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\PagedList.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\PagedList.Mvc.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.Helpers.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.Mvc.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.Optimization.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.Razor.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.WebPages.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\System.Web.WebPages.Razor.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Antlr3.Runtime.pdb
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Newtonsoft.Json.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\EntityFramework.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\EntityFramework.SqlServer.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\obj\Debug\COSArmis.csprojResolveAssemblyReference.cache
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\obj\Debug\COSArmis.dll
+C:\Users\AppDev\Desktop\Backup\COSArmis\COSArmis\obj\Debug\COSArmis.pdb
+C:\Users\AppDev\Desktop\COSArmis\COSArmis\obj\Debug\COSArmis.csprojResolveAssemblyReference.cache

@@ -1,0 +1,69 @@
+﻿@using StudentSearch.Models
+@model LoginViewModel
+<link href="@Url.Content("~/Content/Login.css")" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Log in";
+}
+
+<div id="login">
+
+    <style>
+        #main-body label {
+            font-weight: normal;
+        }
+    </style>
+
+    <div style="padding-top: 0px;" id="wrap">
+        <!-- Header -->
+        <div id="header" style="padding-top:5%; padding-bottom:2%;">
+            <div style="text-align:center">
+                <a class="brand" href="#"><img src="~/Content/KNUST-logo-small.png" width="85" height="75" /></a>
+            </div>
+        </div>
+
+        <div id="main-body" class="box css">
+            <div class="inner">
+
+                <div class="title extra" style="padding-bottom:5%">
+                    <h3 style=" font-size:19px;">@ViewBag.Title with Staff Mail to gain access</h3>
+                </div>
+
+                <div id="login-form" style="width:80%; margin:auto;">
+                    <div>@Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again", new { style = "font-size:13px;", @class = "form-group alert alert-danger" })</div>
+
+                    @using (Html.BeginForm("Login", "Account", new { returnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { id = "loginform" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="form-group">
+                            <label for="username" class="control-label">Username</label>
+                            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @style = "max-width:100%" })
+                            <p>@Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control", @style = "max-width:100%" })
+                            <div>@Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })</div>
+                        </div>
+
+                        <p>
+                            <button type="submit" id="sign-btn" class="btn btn-primary btn-block "> login </button>
+                            @*<input type="submit" class="btn btn-primary btn-large" value="Sign in to your account" style="width: 335px" />*@
+                        </p>
+                        <br />
+                        <br />
+                    }
+
+
+                </div><!-- END INNER -->
+            </div> <!-- END CONTENT -->
+        </div>
+    </div><!-- END WRAP -->
+
+    <div>
+    </div>
+</div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

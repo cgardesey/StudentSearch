@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="StudBase.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'KNUSTARMISLOCAL.dbo.VIEWALLCADYEARS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="VIEWALLCADYEARS">
+          <Key>
+            <PropertyRef Name="ACADYEAR" />
+          </Key>
+          <Property Name="ACADYEAR" Type="int" Nullable="false" />
+        </EntityType>
+        <Function Name="procStudentInfoDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="COLLEGEID" Type="int" Mode="In" />
+          <Parameter Name="ACADYEAR" Type="int" Mode="In" />
+          <Parameter Name="SEM" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="StudBaseStoreContainer">
+          <EntitySet Name="VIEWALLCADYEARS" EntityType="Self.VIEWALLCADYEARS" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [VIEWALLCADYEARS].[ACADYEAR] AS [ACADYEAR]
+    FROM [dbo].[VIEWALLCADYEARS] AS [VIEWALLCADYEARS]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="StudBase" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="StudEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="procStudentInfoDetails" ReturnType="Collection(StudBase.procStudentInfoDetails_Result)">
+            <Parameter Name="COLLEGEID" Mode="In" Type="Int32" />
+            <Parameter Name="ACADYEAR" Mode="In" Type="Int32" />
+            <Parameter Name="SEM" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="VIEWALLCADYEARS" EntityType="StudBase.VIEWALLCADYEARS" />
+        </EntityContainer>
+        <ComplexType Name="procStudentInfoDetails_Result">
+          <Property Type="String" Name="STUDENTID" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="FULLNAME" Nullable="true" MaxLength="101" />
+          <Property Type="String" Name="INDEXNO" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="NAME" Nullable="false" MaxLength="100" />
+          <Property Type="Int32" Name="YR" Nullable="false" />
+          <Property Type="String" Name="PRIMARYMOBILE" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="SCHOOLMOBILE" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="EMAIL" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="POSTADD1" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="POSTADD2" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="POSTADD3" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="POSTADD4" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="GUARDIANNAME" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="GUARDIANADDRESS" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="GUARDIANEMAIL" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="GUARDIANPHONE" Nullable="true" MaxLength="50" />
+          <Property Type="Binary" Name="PICTURE" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="VIEWALLCADYEARS">
+          <Key>
+            <PropertyRef Name="ACADYEAR" />
+          </Key>
+          <Property Name="ACADYEAR" Type="Int32" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="StudBaseStoreContainer" CdmEntityContainer="StudEntities" >
+          <FunctionImportMapping FunctionImportName="procStudentInfoDetails" FunctionName="StudBase.Store.procStudentInfoDetails">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="StudBase.procStudentInfoDetails_Result">
+                <ScalarProperty Name="STUDENTID" ColumnName="STUDENTID" />
+                <ScalarProperty Name="FULLNAME" ColumnName="FULLNAME" />
+                <ScalarProperty Name="INDEXNO" ColumnName="INDEXNO" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="YR" ColumnName="YR" />
+                <ScalarProperty Name="PRIMARYMOBILE" ColumnName="PRIMARYMOBILE" />
+                <ScalarProperty Name="SCHOOLMOBILE" ColumnName="SCHOOLMOBILE" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="POSTADD1" ColumnName="POSTADD1" />
+                <ScalarProperty Name="POSTADD2" ColumnName="POSTADD2" />
+                <ScalarProperty Name="POSTADD3" ColumnName="POSTADD3" />
+                <ScalarProperty Name="POSTADD4" ColumnName="POSTADD4" />
+                <ScalarProperty Name="GUARDIANNAME" ColumnName="GUARDIANNAME" />
+                <ScalarProperty Name="GUARDIANADDRESS" ColumnName="GUARDIANADDRESS" />
+                <ScalarProperty Name="GUARDIANEMAIL" ColumnName="GUARDIANEMAIL" />
+                <ScalarProperty Name="GUARDIANPHONE" ColumnName="GUARDIANPHONE" />
+                <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="VIEWALLCADYEARS">
+            <EntityTypeMapping TypeName="StudBase.VIEWALLCADYEARS">
+              <MappingFragment StoreEntitySet="VIEWALLCADYEARS">
+                <ScalarProperty Name="ACADYEAR" ColumnName="ACADYEAR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

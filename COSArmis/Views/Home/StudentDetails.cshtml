@@ -1,0 +1,88 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+
+@model COSArmis.Models.InfoViewModel
+
+
+@{
+    ViewBag.Title = "StudentDetails";
+}
+
+@*<h2>Student Details</h2>*@
+<div>
+    <div class="well" style="margin-top:10px;">
+        <ul>
+            <li>Below is a list of Students under the selected academic year and semester </li>
+            <li>Search for Students in the search box by Applicant ID or Full Name</li>
+            <li>Click on View Details to View the Student Details of a particular Student</li>
+        </ul>
+
+    </div>
+
+    <div class="well" style="margin-top:5%">
+        @Html.AntiForgeryToken()
+        <form action="@Url.Action("StudentDetails", "Home")" method="post" class="form-inline" id="SearchForm">
+        @Html.HiddenFor(m=>m.Sem)
+            @Html.HiddenFor(m => m.Year)
+            @Html.HiddenFor(m => m.College)
+            @Html.TextBoxFor(m => m.searchStudent, new { @class = "form-control input-medium search-query", placeholder = "Search for Student", @style = "width:200px" })
+
+            <button type="submit" class="btn btn-primary btn-default btn-sm">Search</button>
+        </form>
+
+
+       
+            <div id="TableContainer" style="padding:5px 5px">
+                <table class="table table-striped ">
+                    <thead>
+                        <tr>
+                            <th>Student ID </th>
+                            <th>Full Name</th>
+                            <th>Index No.</th>
+                            <th>Programme</th>
+                            <th>Primary Mobile</th>
+                            <th>Year</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        @foreach (var item in Model.SomeList)
+                        {
+
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.STUDENTID) </td>
+                            <td>@Html.DisplayFor(modelItem => item.FULLNAME) </td>
+                            <td>@Html.DisplayFor(modelItem => item.INDEXNO)</td>
+                            <td>@Html.DisplayFor(modelItem => item.STUDENTPROGRAMME)</td>
+                            <td>@Html.DisplayFor(modelItem => item.PRIMARYMOBILE)</td>
+                            <td>@Html.DisplayFor(modelItem => item.YR)</td>
+                            <td>@Html.ActionLink("View Full Details", "Details", new { STUDENTID = item.STUDENTID })</td>
+
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    <div style="margin-left:30%">
+        @Html.PagedListPager(Model.SomeList, page => Url.Action("StudentDetails", new { page, searchStudent = Model.searchStudent, Year = Model.Year, Sem = Model.Sem, College = Model.College }))
+    </div>
+
+    <div>
+        @Html.ActionLink("Back to Home", "Index")
+    </div>
+</div>
+
+
+
+@section scripts {
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

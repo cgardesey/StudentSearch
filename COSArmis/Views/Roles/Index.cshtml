@@ -1,0 +1,78 @@
+﻿﻿@model StudentSearch.Models.RolesIndexViewModel
+@{
+    ViewBag.Title = "Users";
+}
+
+<div class="containerDefault">
+        <h4>Roles Overview</h4>  @Html.ActionLink("Register a new user", "Register", "Account")
+
+   
+        <div class="containerDefault">
+
+            @using (Html.BeginForm("Index", "Roles", new { id = "usersearch" }))
+            {
+                <div class="form-group">
+                    <div class="col-lg-3"> @Html.TextBoxFor(m => m.Searchusers, new { @class = "form-control" })</div>
+                    <div class="col-lg-3"><input type="submit" value="Search" class="btn btn-default"></div>
+                </div>
+            }
+
+
+            <div id="TableContainer" style="padding:60px 5px;">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Users</th>
+                            <th>Roles Assigned</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        @foreach (var item in Model.UserList)
+                        {
+
+                            <tr>
+                                <td> @Html.DisplayFor(modelItem => item.Username) </td>
+                                <td> @Html.DisplayFor(modelItem => item.Roles) </td>
+                                <td>@Html.ActionLink("Edit", "EditUserRole", new { Username = item.Username })</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+        @section scripts{
+
+            <script>
+                $(function () {
+
+                    $("usersearch").on("submit", function (e) {
+                        e.preventDefault();
+
+                        $.ajax({
+                            url: this.action,
+                            type: this.method,
+                            data: $(this).serialize(),
+                            success: function (data) {
+                                $("#result").html(data);
+                            }
+
+
+                        });
+
+                    });
+
+                });
+
+            </script>
+
+
+        }
+
+
+

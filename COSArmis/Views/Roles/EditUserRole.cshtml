@@ -1,0 +1,110 @@
+﻿@model StudentSearch.Models.EditUserRoleViewModel
+@{
+    ViewBag.Title = "Edit User Roles";
+
+}
+
+<div class="containerDefault">
+    <div id="roleModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Assign new Role to user @Model.Username</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="@Url.Action("AssignRole", "Roles")" method="post" class="form-horizontal" id="RoleAssignmentForm">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.ROLENAME, new { @class = "col-md-2 control-label" })
+                            <div class="col-md-10">
+                                @Html.DropDownListFor(m => m.ROLEID, Model.Roles, "Assign a new Role", new { @class = "form-control" })
+                            </div>
+                        </div>
+                        @Html.HiddenFor(m => m.Username, Model.Username)
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="submit" class="btn btn-primary" form="RoleAssignmentForm">
+                        Save New Role
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2>EditUserRole</h2>
+
+    @if (Model.RolesAssigned.Count() != 0)
+    {
+        <div id="TableContainer" style="padding:5px 5px">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Roles</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model.RolesAssigned)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ROLENAME)
+                                @Html.ActionLink("Remove", "DeassignUserRoles", new { COLLEGEUSERID = item.COLLEGEUSERID, ROLEID = item.ROLEID, Username = Model.Username, ROLENAME = item.ROLENAME })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    <button class="btn btn-info" id="showRoleModal">Assign New Role</button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    @Html.ActionLink("Back to Manage Users", "Index")
+</div>
+
+
+
+    @section scripts {
+
+        <script>
+            $(function () {
+
+                var showFacutlyModal = function () {
+                    $("#facultyModal").modal("show");
+                };
+
+                $("#showFacultyModal").click(showFacutlyModal);
+
+                var showDepartmentModal = function () {
+                    $("#departmentModal").modal("show");
+                };
+
+                $("#showDepartmentModal").click(showDepartmentModal);
+
+                var showRoleModal = function () {
+                    $("#roleModal").modal("show");
+                };
+
+                $("#showRoleModal").click(showRoleModal);
+
+
+            });
+
+            //var obj = document.getElementById("FacultySubmitButton");
+
+
+        </script>
+    }

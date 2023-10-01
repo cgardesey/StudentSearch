@@ -1,0 +1,105 @@
+﻿
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0px none;
+}
+
+#login {
+    min-height: 100%;
+    height: 100%;
+}
+#login div#main-body div.title.extra {
+    height: auto;
+}
+#login div#main-body div.inner {
+    background: -moz-linear-gradient(center top , white, rgb(246, 241, 241)) repeat scroll 0% 0% rgb(255, 255, 255);
+    border-radius: 4px 4px 4px 4px;
+}
+#login div#wrap {
+    position: relative;
+    min-height: 100%;
+}
+#login div#main-body form p.text span {
+    display: block;
+    box-shadow: 0px 1px 0px white;
+}
+#login div#main-body form p {
+    margin-bottom: 14px;
+}
+#login div#main-body form p.text input:focus {
+    border-color: rgb(86, 149, 219);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12) inset, 0px 0px 5px rgb(86, 149, 219);
+}
+#login div#main-body form p.text input {
+        font-size: 18px;
+        padding: 10px 12px;
+        width: 306px;
+        border-width: 1px;
+        border-style: solid;
+        border-right: 1px solid rgb(170, 170, 170);
+        -moz-border-top-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        border-image: none;
+        border-radius: 4px 4px 4px 4px;
+    }
+
+  #login div#main-body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0.3)));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3));
+    -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.27);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.27);
+    padding: 1px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+    #login div#main-body div.inner {
+      background: #fff;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f6f1f1));
+      background-image: -moz-linear-gradient(top, white, #f6f1f1);
+      background-image: -o-linear-gradient(top, white, #f6f1f1);
+      -o-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px; }
+    #login div#main-body div.title {
+      height: 55px;
+      overflow: hidden;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0)));
+      background-image: -moz-linear-gradient(top, white, rgba(255, 255, 255, 0));
+      background-image: -o-linear-gradient(top, white, rgba(255, 255, 255, 0));
+      -o-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px; }
+#login div.box {
+    width: 450px;
+}
+#main-body {
+    padding: 10px;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    min-height: 200px;
+}
+
+div#main-body.box {
+margin-left: auto;
+margin-right: auto;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#login-form {
+    margin-left: 50px;
+    text-align: left;
+}
+DIV.title.extra {
+    text-align:center;
+}

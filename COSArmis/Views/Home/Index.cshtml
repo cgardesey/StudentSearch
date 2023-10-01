@@ -1,0 +1,176 @@
+﻿@model StudentSearch.Models.StudentSearchViewModels
+@using PagedList.Mvc;
+@using PagedList;
+
+<div class="container_24">
+
+    <div class="menubar" style="background: url('../../Content/img/bluebg.jpg');">
+        <div class="containallfields">
+@using (Html.BeginForm("Index", "Home", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-inline", role = "form", @id = "SearchForm" }))
+{
+            <div class="containfields">
+                @if(!User.IsInRole("Health Staff"))
+                {
+					<div class="frame">
+                    <div class="fields2">
+                        <div id="field1">College  </div>
+                        <div id="field2">
+                           @Html.DropDownListFor(model => model.College, Model.CollegeList, new { @class = "form-control", @style = "width:100%; max-width:100%;" })
+                        </div>
+                    </div>
+                </div>
+                }
+
+                <div class="frame3">
+                    <div class="fields2">
+                        <div id="field1">Academic Year  </div>
+                        <div id="field3">
+                            @Html.DropDownListFor(model => model.Year, Model.AcadyearList, new { @class = "form-control", @style = "width:50%" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="frame2">
+                    <div class="fields2">
+                        <div id="field1">Semester</div>
+                        <div id="field4">
+                            @Html.DropDownListFor(model => model.Sem, Model.SemList, new { @class = "form-control", @style = "width:100%;", @onchange = "document.getElementById('SearchForm').submit();" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containlink">
+               @* <a href="#"><div id="txtbox2">Load students details</div></a>*@
+
+                <div class="searchbox">              
+                      @Html.TextBoxFor(m => m.searchStudent, new {@class="form-control", @id="studentId" })
+                        
+                            <div id="search">
+                                <img src="~/Content/img/search.png" onclick="document.getElementById('SearchForm').submit();" />   
+                            </div>
+       
+                </div>
+            </div>
+
+}
+
+        </div>
+    </div>
+</div>
+
+
+@*<div style="padding-top:5%; text-align:center;">
+
+    @using (Html.BeginForm("Index", "Home", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-inline", role = "form", @id = "SearchForm" }))
+    {
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        if (!User.IsInRole("Health Staff"))
+        {
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.DropDownListFor(model => model.College, Model.CollegeList, new { @class = "form-control", @style = "width:1000px;" })
+                    @Html.ValidationMessageFor(model => model.College)
+                </div>
+            </div>
+        }
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Year, Model.AcadyearList,"Select Academic Year", new { @class = "form-control", @style = "width:200px;" })
+                @Html.ValidationMessageFor(model => model.Year)
+            </div>
+        </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.Sem, Model.SemList, "Select Semester", new { @class = "form-control", @style = "width:150px;", @onchange = "document.getElementById('SearchForm').submit();" })
+            @Html.ValidationMessageFor(model => model.Sem)
+        </div>
+    </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.TextBox("searchStudent", null, new { @class = "form-control", @style = "width:200px;", @placeholder = "Search for Student", @onemptied = "document.getElementById('SearchForm').submit();" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Search" class="btn btn-default" />
+            </div>
+        </div>
+    }
+
+</div>*@
+
+
+
+<div>
+    @*<div class="well" style="margin-top:10px;">
+        <ul>
+            <li>Below is a list of Students under the selected academic year and semester </li>
+            <li>Search for Students in the search box by Applicant ID or Full Name</li>
+            <li>Click on View Details to View the Student Details of a particular Student</li>
+        </ul>
+
+    </div>*@
+
+    <div class="well" style="margin-top:5%; margin-left:20px; margin-right:15px;">
+        @Html.AntiForgeryToken()
+        <form action="@Url.Action("Index", "Home")" method="post" class="form-inline" id="SearchForm">
+            @Html.HiddenFor(m => m.Sem)
+            @Html.HiddenFor(m => m.Year)
+            @Html.HiddenFor(m => m.College)
+            @*@Html.TextBoxFor(m => m.searchStudent, new { @class = "form-control input-medium search-query", placeholder = "Search for Student", @style = "width:200px" })*@
+        </form>
+
+        <div id="TableContainer" style="padding:5px 5px">
+            <table class="table table-striped ">
+                <thead>
+                    <tr>
+                        <th>Student ID </th>
+                        <th>Full Name</th>
+                        <th>Index No.</th>
+                        <th>Programme</th>
+                        <th>Primary Mobile</th>
+                        <th>Year</th>
+                        <th>Action</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var item in Model.SomeList)
+                    {
+
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.STUDENTID) </td>
+                            <td>@Html.DisplayFor(modelItem => item.FULLNAME) </td>
+                            <td>@Html.DisplayFor(modelItem => item.INDEXNO)</td>
+                            <td>@Html.DisplayFor(modelItem => item.STUDENTPROGRAMME)</td>
+                            <td>@Html.DisplayFor(modelItem => item.PRIMARYMOBILE)</td>
+                            <td>@Html.DisplayFor(modelItem => item.YR)</td>
+                            <td>@Html.ActionLink("View Full Details", "Details", new { STUDENTID = item.STUDENTID })</td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <div style="margin-left:30%">
+        @Html.PagedListPager(Model.SomeList, page => Url.Action("Index", new { page, searchStudent = Model.searchStudent, Year = Model.Year, Sem = Model.Sem, College = Model.College }))
+    </div>
+
+</div>
+
+
+
+
+@section scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

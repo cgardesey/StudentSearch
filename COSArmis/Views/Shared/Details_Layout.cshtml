@@ -1,0 +1,107 @@
+﻿@model StudentSearch.Models.StudentSearchViewModels
+@using PagedList.Mvc;
+@using PagedList;
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/custom.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+  
+        <div class="container_24">
+
+            <div class="menubar" style="background: url('../../Content/img/bluebg.jpg');">
+                <div class="containallfields">
+                    @using (Html.BeginForm("Index", "Home", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-inline", role = "form", @id = "SearchForm" }))
+                    {
+                        <div class="containfields">
+                            @if (!User.IsInRole("Health Staff"))
+                            {
+                                <div class="frame">
+                                    <div class="fields2">
+                                        <div id="field1">College  </div>
+                                        <div id="field2">
+                                            @Html.DropDownListFor(model => model.College, Model.CollegeList, new { @class = "form-control", @style = "width:100%; max-width:100%;" })
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                            <div class="frame3">
+                                <div class="fields2">
+                                    <div id="field1">Academic Year  </div>
+                                    <div id="field3">
+                                        @Html.DropDownListFor(model => model.Year, Model.AcadyearList, new { @class = "form-control", @style = "width:50%" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="frame2">
+                                <div class="fields2">
+                                    <div id="field1">Semester</div>
+                                    <div id="field4">
+                                        @Html.DropDownListFor(model => model.Sem, Model.SemList, new { @class = "form-control", @style = "width:100%;", @onchange = "document.getElementById('SearchForm').submit();" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="containlink">
+                            @* <a href="#"><div id="txtbox2">Load students details</div></a>*@
+
+                            <div class="searchbox">
+                                @Html.TextBoxFor(m => m.searchStudent, new { @class = "form-control", @id = "studentId" })
+
+                                <div id="search">
+                                    <img src="~/Content/img/search.png" onclick="document.getElementById('SearchForm').submit();" />
+                                </div>
+
+                            </div>
+                        </div>
+
+                    }
+
+                </div>
+            </div>
+        </div>
+
+    
+
+    <div class="body">
+        @RenderBody()
+
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Student Search App</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,240 @@
+﻿@model StudentSearch.Models.StudentSearchViewModels
+
+@{
+    ViewBag.Title = "Details";
+}
+ <div class="space">
+
+    <div class="detailbox">
+        <div class="containerDefault">
+
+            <h4>Student Details</h4>
+            <hr />
+            @if (Model.PICTURE == null)
+            {
+                <div class="col-md-4 col-sm-6 col-xs-7">
+                    <div class="circlepic"><img src="~/Content/img/passportpic.png" id="piccircle" /></div>
+                </div>
+            }
+            else
+            {
+                <div class="col-md-4 col-sm-6 col-xs-7">
+                    @*<div class="circlepic"><img src="~/Content/img/pic3.jpg" id="piccircle" /></div>*@
+                    <div> <img src="data:image;base64,system.convert.tobase64string(Model.picture)" style="height:100px; width:100px; border-radius:100px;" id="piccircle" /></div>
+                </div>
+            }
+            
+            <div class="studentdetail">
+                <table style="width:100%" class="details">
+                    <tr>
+                        <td>Student ID</td>
+                        <td><strong>@Html.DisplayFor(model => model.STUDENTID)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Fullname:</td>
+                        <td><strong>@Html.DisplayFor(model => model.FULLNAME)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Index number:</td>
+                        <td><strong>@Html.DisplayFor(model => model.INDEXNO)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Programme:</td>
+                        <td><strong>@Html.DisplayFor(model => model.NAME)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Year:</td>
+                        <td><strong>@Html.DisplayFor(model => model.YR)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Primary mobile:</td>
+                        <td><strong>@Html.DisplayFor(model => model.PRIMARYMOBILE)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>School mobile:</td>
+                        <td><strong>@Html.DisplayFor(model => model.SCHOOLMOBILE)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><strong>@Html.DisplayFor(model => model.EMAIL)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Post Add1:</td>
+                        <td><strong>@Html.DisplayFor(model => model.POSTADD1)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Post Add2:</td>
+                        <td><strong>@Html.DisplayFor(model => model.POSTADD2)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Post Add3:</td>
+                        <td><strong>@Html.DisplayFor(model => model.POSTADD3)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Post Add4:</td>
+                        <td><strong>@Html.DisplayFor(model => model.POSTADD4)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Guardian Name:</td>
+                        <td><strong>@Html.DisplayFor(model => model.GUARDIANNAME)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Guardian Address:</td>
+                        <td><strong>@Html.DisplayFor(model => model.GUARDIANADDRESS)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Guardian e-mail:</td>
+                        <td><strong>@Html.DisplayFor(model => model.GUARDIANEMAIL)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Guardian phone:</td>
+                        <td><strong>@Html.DisplayFor(model => model.GUARDIANPHONE)</strong></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="container"></div>
+
+            @*<div>
+                @*<h4>Customers</h4>*@
+           
+                <hr/>
+                    @*<dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.STUDENTID)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.STUDENTID)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.FULLNAME)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.FULLNAME)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.INDEXNO)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.INDEXNO)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.NAME)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.NAME)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.YR)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.YR)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.PRIMARYMOBILE)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.PRIMARYMOBILE)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.SCHOOLMOBILE)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.SCHOOLMOBILE)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.EMAIL)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.EMAIL)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.POSTADD1)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.POSTADD1)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.POSTADD2)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.POSTADD2)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.POSTADD3)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.POSTADD3)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.POSTADD4)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.POSTADD4)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.GUARDIANNAME)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.GUARDIANNAME)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.GUARDIANADDRESS)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.GUARDIANADDRESS)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.GUARDIANEMAIL)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.GUARDIANEMAIL)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.GUARDIANPHONE)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.GUARDIANPHONE)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.PICTURE)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.PICTURE)
+                        </dd>
+
+                    </dl>*@
+                    </div>
+            <p>
+                @Html.ActionLink("Back to Home", "Index", new { Year = Model.Year, Sem = Model.Sem, College = Model.College })
+            </p>
+        </div>
+    </div>
+
+</div>
