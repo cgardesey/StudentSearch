@@ -1,14 +1,16 @@
 # Student Management System - Search Feature
 
-Welcome to the Student Management System application! This ASP.NET application allows you to efficiently manage student records and perform quick searches based on various criteria.
+Welcome to the ARMIS Student Record Search and Display application, a feature-rich module I developed as part of the Arcademic Record Management System (ARMIS) project. ARMIS is the in-house management software used by administrators of Kwame Nkrumah University of Science and Technology (KNUST). This application is designed to efficiently search and display student records, providing a seamless experience for administrators and users alike.
 
 ## Features
 
-- **Search Students:** Easily search for students using different parameters such as name, roll number, class, or any other custom attribute.
-- **View Student Details:** Access detailed information about each student, including personal details, contact information, and academic records.
-- **Edit Student Information:** Update student details such as contact numbers, addresses, or course-related information.
-- **Add New Students:** Add new students to the system with complete details and assign them to appropriate classes.
-- **Delete Students:** Remove students from the system when they graduate or leave the institution.
+- **User-friendly Interface:** Intuitive and easy-to-navigate interface for searching student records.
+- **Quick Search:** Fast and accurate search functionality to find specific student records based on various criteria.
+- **Detailed Information:** View detailed student information, including personal details, academic records, and more.
+- **Responsive Design:** Responsive design ensures a seamless experience across devices, including desktops, tablets, and mobile phones.
+- **Secure Access:** Role-based access control ensures that only authorized users can access sensitive student data.
+- **Integration with ARMIS:** Seamlessly integrates with the Arcademic Record Management System, allowing for smooth data flow and synchronization.
+
 
 ## Getting Started
 
